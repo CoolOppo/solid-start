@@ -27,8 +27,8 @@ export default function () {
       const appRoot = config.solidOptions.appRoot;
       await vite.build({
         build: {
+          ...config.build,
           outDir: "./dist/",
-          minify: "terser",
           rollupOptions: {
             input: resolve(join(config.root, appRoot, `entry-client`)),
             output: {
@@ -39,6 +39,7 @@ export default function () {
       });
       await vite.build({
         build: {
+          ...config.build,
           ssr: true,
           outDir: "./.solid/server",
           rollupOptions: {
