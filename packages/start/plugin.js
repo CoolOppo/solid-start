@@ -3,7 +3,6 @@ import path from "path";
 import { normalizePath } from "vite";
 import manifest from "rollup-route-manifest";
 import solid from "vite-plugin-solid";
-import inspect from "vite-plugin-inspect";
 import { stringifyApiRoutes, stringifyPageRoutes, Router } from "./routes.js";
 import c from "picocolors";
 import babelServerModule from "./server/babel.js";
@@ -396,7 +395,6 @@ export default function solidStart(options) {
       routesDir: "routes",
       ssr: true,
       prerenderRoutes: [],
-      inspect: true
     },
     options ?? {}
   );
@@ -408,7 +406,6 @@ export default function solidStart(options) {
     // }),
     solidStartConfig(options),
     solidStartFileSystemRouter(options),
-    options.inspect ? inspect() : undefined,
     options.ssr && solidStartInlineServerModules(options),
     solid({
       ...(options ?? {}),
