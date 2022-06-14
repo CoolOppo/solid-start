@@ -29,6 +29,7 @@ export default function () {
         build: {
           ...config.build,
           ssr: false,
+          target: "esnext",
           outDir: "./dist/",
           rollupOptions: {
             input: resolve(join(config.root, appRoot, `entry-client`)),
@@ -42,7 +43,7 @@ export default function () {
         build: {
           ...config.build,
           ssr: true,
-          target: "node18.3.0",
+          target: "esnext",
           outDir: "./.solid/server",
           rollupOptions: {
             input: resolve(join(config.root, appRoot, `entry-server`)),
