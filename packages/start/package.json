@@ -1,6 +1,6 @@
 {
   "name": "solid-start",
-  "version": "0.1.0-alpha.88",
+  "version": "0.1.0-alpha.89",
   "description": "Create Solid apps with low configuration",
   "author": "Ryan Carniato",
   "license": "MIT",
@@ -57,7 +57,7 @@
     "solid-app-router": "^0.3.1",
     "solid-js": "^1.4.0",
     "solid-meta": "^0.27.5",
-    "solid-start-cloudflare-pages": "https://gitpkg.now.sh/CoolOppo/solid-start/packages/start-cloudflare-pages?5818891590a4ca278c788e1a8c7db9d082182d98",
+    "solid-start-cloudflare-pages": "https://gitpkg.now.sh/CoolOppo/solid-start/packages/start-cloudflare-pages?38d54f53ea0f826a3c481585d7a17483cbc3e73f",
     "solid-start-cloudflare-workers": "next",
     "solid-start-deno": "next",
     "solid-start-static": "next",
