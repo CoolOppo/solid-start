@@ -42,6 +42,7 @@ export default function () {
         build: {
           ...config.build,
           ssr: true,
+          target: "node18.3.0",
           outDir: "./.solid/server",
           rollupOptions: {
             input: resolve(join(config.root, appRoot, `entry-server`)),
