@@ -57,12 +57,12 @@
     "solid-app-router": "^0.3.1",
     "solid-js": "^1.4.0",
     "solid-meta": "^0.27.5",
-    "solid-start-cloudflare-pages": "https://gitpkg.now.sh/CoolOppo/solid-start/packages/start-cloudflare-pages?38d54f53ea0f826a3c481585d7a17483cbc3e73f",
+    "solid-start-cloudflare-pages": "https://gitpkg.now.sh/CoolOppo/solid-start/packages/start-cloudflare-pages?2c804b6266dc9421b754e0842e9bd326b51324a0",
     "solid-start-cloudflare-workers": "next",
     "solid-start-deno": "next",
-    "solid-start-static": "next",
     "solid-start-netlify": "next",
     "solid-start-node": "next",
+    "solid-start-static": "next",
     "vite": "^2.8.6"
   },
   "peerDependencies": {
