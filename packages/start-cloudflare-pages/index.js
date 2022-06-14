@@ -43,7 +43,7 @@ export default function () {
         build: {
           ...config.build,
           ssr: true,
-          target: "esnext",
+          target: "node17.5.0",
           outDir: "./.solid/server",
           rollupOptions: {
             input: resolve(join(config.root, appRoot, `entry-server`)),
@@ -73,7 +73,7 @@ export default function () {
       // or write the bundle to disk
       await bundle.write({
         format: "esm",
-        file: join(config.root, "dist", "functions", "[[path]].js")
+        file: join(config.root, "functions", "[[path]].js")
       });
 
       // closes the bundle
