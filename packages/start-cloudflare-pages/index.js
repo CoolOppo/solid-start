@@ -28,6 +28,7 @@ export default function () {
       await vite.build({
         build: {
           ...config.build,
+          ssr: false,
           outDir: "./dist/",
           rollupOptions: {
             input: resolve(join(config.root, appRoot, `entry-client`)),
@@ -70,7 +71,7 @@ export default function () {
       // or write the bundle to disk
       await bundle.write({
         format: "esm",
-        file: join(config.root, "functions", "[[path]].js")
+        file: join(config.root, "dist", "functions", "[[path]].js")
       });
 
       // closes the bundle
